@@ -31,7 +31,7 @@ This repository houses the practical front-end projects developed as part of the
 
 | # | Task Folder | Level | Technologies | Key Features | Status |
 |---|-------------|-------|--------------|--------------|:------:|
-| **01** | [Task-01-Responsive-Landing-Page](./Task-01-Responsive-Landing-Page) | Easy | HTML5, CSS3 | Responsive Layout, Navbar, Hero Section, CTA, Mobile-first Design | ⏳ Not Started |
+| **01** | [Task-01-Responsive-Landing-Page](./Task-01-Responsive-Landing-Page) | Easy | HTML5, CSS3, JavaScript | Responsive Layout, Navbar, Hero Section, CTA, Tabs, Pricing Switcher | ✅ Completed |
 | **02** | [Task-02-Interactive-Portfolio](./Task-02-Interactive-Portfolio) | Easy | HTML5, CSS3, JavaScript | Portfolio Showcase, Skills, Contact Form, Micro-animations | ⏳ Not Started |
 | **03** | [Task-03-Dynamic-Todo-App](./Task-03-Dynamic-Todo-App) | Medium | HTML, CSS, JavaScript, LocalStorage | Add/Delete Tasks, Status Tracking, Persistent Storage, Filters | ⏳ Not Started |
 | **04** | [Task-04-Weather-Dashboard](./Task-04-Weather-Dashboard) | Medium | JavaScript (ES6+), REST API, Fetch | Real-Time Weather Data, City Search, Dynamic Weather UI, Error Handling | ⏳ Not Started |
