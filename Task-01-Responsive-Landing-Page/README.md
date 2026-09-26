@@ -13,6 +13,7 @@
 
 ## 🎯 Key Features Implemented
 
+- [x] **Dark / Light Mode Switcher:** Seamless theme toggle in navbar and mobile drawer with local storage persistence and butter-smooth color transitions.
 - [x] **Sticky Glassmorphism Navbar:** Dynamic background blur on scroll, brand logo, navigation links, and action buttons.
 - [x] **Mobile Drawer Navigation:** Fully animated slide-in drawer with hamburger toggle for seamless mobile browsing.
 - [x] **High-Impact Hero Section:**

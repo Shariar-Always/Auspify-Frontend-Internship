@@ -5,6 +5,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initTheme();
   initStickyHeader();
   initMobileNavigation();
   initActiveNavOnScroll();
@@ -13,6 +14,52 @@ document.addEventListener('DOMContentLoaded', () => {
   initFaqAccordion();
   initCtaForm();
 });
+
+/* --------------------------------------------------------------------------
+   0. Theme Switcher (Dark / Light Mode)
+   -------------------------------------------------------------------------- */
+function initTheme() {
+  const themeToggleBtn = document.getElementById('themeToggleBtn');
+  const drawerThemeToggle = document.getElementById('drawerThemeToggle');
+  const themeToggleIcon = document.getElementById('themeToggleIcon');
+  const drawerThemeIcon = document.getElementById('drawerThemeIcon');
+
+  const getPreferredTheme = () => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) return savedTheme;
+    return 'dark'; // default theme is modern dark
+  };
+
+  const applyTheme = (theme) => {
+    if (theme === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+      if (themeToggleIcon) themeToggleIcon.className = 'fa-solid fa-moon';
+      if (drawerThemeIcon) drawerThemeIcon.className = 'fa-solid fa-moon';
+      if (themeToggleBtn) themeToggleBtn.setAttribute('title', 'Switch to dark mode');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+      if (themeToggleIcon) themeToggleIcon.className = 'fa-solid fa-sun';
+      if (drawerThemeIcon) drawerThemeIcon.className = 'fa-solid fa-sun';
+      if (themeToggleBtn) themeToggleBtn.setAttribute('title', 'Switch to light mode');
+    }
+    localStorage.setItem('theme', theme);
+  };
+
+  const toggleTheme = () => {
+    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    applyTheme(isLight ? 'dark' : 'light');
+  };
+
+  // Set initial theme
+  applyTheme(getPreferredTheme());
+
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', toggleTheme);
+  }
+  if (drawerThemeToggle) {
+    drawerThemeToggle.addEventListener('click', toggleTheme);
+  }
+}
 
 /* --------------------------------------------------------------------------
    1. Sticky Header & Blur on Scroll
