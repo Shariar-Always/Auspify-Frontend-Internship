@@ -88,9 +88,10 @@ Auspify-Frontend-Internship/
 ## 👨‍💻 Connect with Me
 
 - **Developer:** Shariar Ahamed Ripon
-- **GitLab:** [@Shariar-Ahamed](https://gitlab.com/Shariar-Ahamed)
-- **Repository:** [Auspify-Frontend-Internship](https://gitlab.com/Shariar-Ahamed/Auspify-Frontend-Internship)
-- **LinkedIn:** [Shariar Ahamed](https://www.linkedin.com/in/) <!-- Add your LinkedIn profile URL here -->
+- **GitHub:** [@Shariar-Always](https://github.com/Shariar-Always)
+- **Repository:** [Auspify-Frontend-Internship](https://github.com/Shariar-Always/Auspify-Frontend-Internship)
+- **LinkedIn:** [Shariar Ahamed Ripon](https://www.linkedin.com/in/shariarahamed/)
+- **Portfolio:** [shariarahamed.com](https://www.shariarahamed.com)
 
 ---
 
